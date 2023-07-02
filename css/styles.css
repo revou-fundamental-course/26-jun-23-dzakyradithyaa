@@ -2,30 +2,62 @@
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+  margin: 0;
+}
 /* HEADER SECTION */
 #headerNavigation {
   display: flex;
   justify-content: space-between;
+  background-color: rgb(241, 237, 228);
+  padding: 5px;
+}
+#headerNavigation img {
+  margin-left: 20px;
 }
 #navigation {
   display: flex;
-  gap: 10px;
+  gap: 3px;
+}
+#navigation > div {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  margin: 5px;
+  text-align: center;
+  font-size: 14s;
+  border: 2px solid rgba(151, 151, 151, 0.822);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+#navigation a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+#navigation > div:hover {
+  background-color: rgb(241, 237, 228);
+  border-color: white;
 }
 #headerTitle {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /* i made */
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 /* i made */
 
 #sub-title {
   margin: 0;
-  color: rgba(128, 128, 128, 0.826);
+  color: rgba(128, 128, 128, 0.733);
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 /* CALL-US SECTION */
 #callus {
@@ -38,22 +70,160 @@ h1 {
 #article {
   flex-basis: 60%;
   flex-grow: 0;
-  margin-left: 32px;
+  margin-left: 60px;
+  margin-right: 15px;
 }
 
 #article img {
   max-width: 100%;
   max-height: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 #form {
   flex-basis: 40%;
   flex-grow: 0;
-  background-color: gray;
-  margin-right: 32px;
-  border-radius: 5px;
+  background-color: rgb(241, 237, 228);
+  margin-right: 60px;
+  border-radius: 6px;
 }
 .titleform {
-  margin: 10px 10px;
+  font-size: 1.4rem;
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+.sub-titleform {
+  margin-top: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+  color: rgba(0, 0, 0, 0.384);
+}
+
+/* PERCOBAANN FORM */
+
+.isi-form {
+  border-radius: 5px;
+  padding-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea[id="message"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+  color: white;
+  animation: smooth;
+}
+
+/* ARTICLE */
+
+#article h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  color: rgba(0, 0, 0, 0.63);
+  font-weight: 400;
+  display: inline-block;
+}
+
+/* TESTIMONI */
+
+.testimoni-img {
+  display: inline-block;
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+.testimoni-img img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border-radius: 50% !important;
+}
+.testimoni-info {
+  display: inline-block;
+}
+.testimoni-name {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.testimoni-job {
+  font-weight: normal;
+  font-size: 0.8rem;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.65);
+}
+hr {
+  border: 2px solid rgb(221, 217, 206);
+  border-radius: 5px;
+  width: 160px;
 }

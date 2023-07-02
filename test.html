@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>E-Grocery</title>
+    
   </head>
   <body>
     <header>
       <section id="headerNavigation">
-        <img src="" alt="" width="" />
+        <a href="#home"><img src="img/logo.png" alt="logo" width="60" /></a>
         <nav id="navigation">
-          <a href="#home">Home</a>
-          <a href="#ourpackage">Our Package</a>
-          <a href="#callus">Call Us</a>
+          <div><a href="#home">Home</a></div>
+          <div><a href="#ourpackage">Our Package</a></div>
+          <div><a href="#callus">Call Us</a></div>
         </nav>
       </section>
       <section id="headerTitle">
-        <h1>Top Rated E-Groceries Shop in Indonesia</h1>
+        <h1>Top Rated E-Groceries Shop in <br />Indonesia</h1>
         <h4 id="sub-title">Every Day with Best Ingredients</h4>
       </section>
     </header>
@@ -25,13 +26,45 @@
       <section id="callus">
         <article id="article">
           <img src="img/grocery.jpg" alt="" />
-          <h5>setiap hari beli sayur buah yang fresh disini</h5>
+          <h5><i>"setiap hari beli sayur buah yang fresh disini"</i></h5>
+          <br>
+          <div class="testimoni-img">
+            <img src="img/testimoni.jpg" alt="">
+          </div>
+          <div class="testimoni-info">
+            <h4 class="testimoni-name">Florence Hughes</h4>
+            <p class="testimoni-job">Ibu Rumah Tangga, 24</p>
+          </div>
+        <hr>
         </article>
         <section id="form">
           <h3 class="titleform">Contact Us</h3>
-          <p class="titleform">sales akan menghubungi anda 2 x 24 jam</p>
+          <p class="sub-titleform">
+            Sales akan menghubungi anda 1x24 Jam setelah data kami terima.
+          </p>
+          <!-- PERCOBAAN FORM -->
+          <form action="#" class="isi-form">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="fullname" placeholder="Your Name">
+        
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="emailaddress" placeholder="yourname@gmail.com">
+
+            <label for="phone">Phone number :</label>
+            <input type="tel" id="phone" name="phone" placeholder="0812-3456-7890">
+
+            <label for="message">Message :</label>
+            <br>
+            <textarea id="message" name="message" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="SEND">
+            <!-- PERCOBAAN FORM -->
         </section>
+      </section>
+      <section>
+        <!-- Bussiness Marketing -->
       </section>
     </main>
   </body>
 </html>
+<!-- kalau mau push github caranya: git add . ,git commit -m "blablabla", git push -->
